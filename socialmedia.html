@@ -1,0 +1,78 @@
+
+<html>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaNest - Home</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2575fc',
+            secondary: 'white',
+            dark: '#555',
+          },
+        },
+      },
+    };
+
+  </script>
+  <style>
+    .back-button {
+  display: inline-block;
+  margin: 20px 0 10px 20px;
+  padding: 10px 18px;
+  background-color: #9ff35b;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(80, 131, 165, 0.1);
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #d2faed5e;
+}
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <a href="googlephoto.html" class="back-button">⬅ Back</a>
+  <!-- Navbar -->
+  <header class="bg-dark text-white py-4 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">NovaNest</h1>
+      <nav class="space-x-4">
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-secondary to-primary text-white text-center py-24 px-4">
+    <a href="https://www.instagram.com/" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+      instagram
+    </a>
+    <a href="https://www.tiktok.com/search?q=m23&t=1738098948634" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+        tiktok
+      </a>
+      <a href="https://www.google.com/maps/@-1.9649252,30.0556792,2895m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+        google map
+      </a>
+      <a href="https://web.facebook.com/" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+        facebook
+      </a>
+      <a href="https://www.youtube.com/" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+        youtube
+      </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-20 mt-25">
+   <marquee><p class="text-sm">&copy; 2025 NovaNest. All rights reserved. #Hosted by Robert</p></marquee>
+  </footer>
+
+</body>
+</html>
