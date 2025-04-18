@@ -1,0 +1,263 @@
+
+<html>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaNest - Home</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2575fc',
+            secondary: '#6a11cb',
+            dark: '#0a0a23',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<style>
+  .mission-section,
+.team-section {
+  margin-bottom: -20px;
+}
+
+.mission-section h2,
+.team-section h2 {
+  font-size: 2.8rem;
+  color: #3366cc;
+  margin-bottom: 10px;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 2px solid #3366cc;
+}
+.team-info h3 {
+  margin: -20;
+  font-size: 1.3rem;
+}
+.intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+.team-info p {
+  margin: 2px 0;
+  color: #555;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #04040a;
+  color: white;
+  padding: 2rem 3rem;
+  position: sticky;
+  top: 20;
+  z-index: 500;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 50;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background: #0a0a23;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 5em 2em;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  background: white;
+  color: #2575fc;
+  border-radius: 5px;
+  margin-top: 1em;
+  text-decoration: none;
+}
+
+
+form button {
+  padding: 0.8rem;
+  border: none;
+  background: #2575fc;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1a5dcc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 5rem;
+  background: #0a0a23;
+  color: rgb(86, 162, 224);
+  font-size: 4.7rem;
+}
+.main-footer {
+  background-color: #222;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #0a58ca;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #084298;
+}
+
+.support-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 4px 9px;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.store-btn {
+  width: 150px;
+  margin-top: 10px;
+  display: block;
+}
+
+.footer-bottom {
+  background-color: #16a6f9; /* Tailwind orange-500 */
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+
+</style>
+<body class="bg-gray-60 text-gray-600 font-sans">
+ 
+  <!-- Navbar -->
+  <header class="bg-dark text-white py-9 shadow-md">
+    <div class="max-w-7x2 mx-auto px-11 flex justify-between items-center">
+      <section class="team-section">
+        <div class="team-card">
+         <p><img src="robert.png" alt="Robert Niyoyita"><h1 class="text-5x2 font-bold">NovaNest</h1></p>
+          <div class="team-info">
+          </div>
+      </section>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="googlephoto.html" class="hover:underline">Googlephoto</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="feature.html" class="hover:underline">Features</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-secondary to-primary text-white text-center py-21 px-3">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Welcome to NovaNest</h2>
+    <p class="text-lg md:text-xl mb-6">Your nest for new beginnings and big ideas.</p>
+    <a href="sign up.html" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+      Join Us
+    </a>
+    <a href="login.html" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+        Sign in
+      </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-8 mt-25">
+   <marquee><p class="text-sm">&copy; 2025 NovaNest. All rights reserved. #Hosted by Robert</p></marquee>
+  </footer>
+  <footer class="main-footer">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="store-btn"></a>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>The platform powered hosted by <strong>Robert</strong></p>
+    </div>
+  </footer>  
+</body>
+</html>

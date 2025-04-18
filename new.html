@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Media – NovaNest</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4fa;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3366cc;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.upload-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3366cc;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.upload-form label {
+  font-weight: bold;
+}
+
+.upload-form input[type="file"],
+.upload-form select,
+.upload-form button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.upload-form button {
+  background-color: #3366cc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+  background-color: #264da3;
+}
+
+#preview {
+  margin-top: 10px;
+}
+
+  </style>
+  <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">NovaNest</div>
+  </header>
+
+  <main class="upload-container">
+    <h1>Upload Photo or Video</h1>
+    
+    <form class="upload-form" enctype="multipart/form-data">
+      <label>Select Media File</label>
+      <input type="file" id="mediaFile" accept="image/*,video/*" required />
+      <button type="submit"></button><a href="gallery.html" class="hover:underline">upload</a>
+      </button>
+    </form>
+  </main>
+
+  <script>
+    const mediaInput = document.getElementById('mediaFile');
+    const preview = document.getElementById('preview');
+
+    mediaInput.addEventListener('change', function () {
+      preview.innerHTML = ''; // Clear preview
+      const file = mediaInput.files[0];
+
+      if (file) {
+        const type = file.type;
+        const url = URL.createObjectURL(file);
+
+        if (type.startsWith('image')) {
+          const img = document.createElement('img');
+          img.src = url;
+          img.style.width = '100%';
+          img.style.borderRadius = '10px';
+          preview.appendChild(img);
+        } else if (type.startsWith('video')) {
+          const video = document.createElement('video');
+          video.src = url;
+          video.controls = true;
+          video.style.width = '100%';
+          video.style.borderRadius = '10px';
+          preview.appendChild(video);
+        }
+      }
+    });
+  </script>
+</body>
+</html>

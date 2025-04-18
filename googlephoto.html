@@ -1,0 +1,78 @@
+
+<html>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaNest - Home</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2575fc',
+            secondary: '#6a11cb',
+            dark: '#0a0a23',
+          },
+        },
+      },
+    };
+
+  </script>
+  <style>
+    .back-button {
+  display: inline-block;
+  margin: 20px 0 10px 20px;
+  padding: 10px 18px;
+  background-color: #7aec1c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #15e49f;
+}
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <a href="index.html" class="back-button">⬅ Back</a>
+  <!-- Navbar -->
+  <header class="bg-dark text-white py-4 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">NovaNest</h1>
+      <nav class="space-x-4">
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-secondary to-primary text-white text-center py-24 px-4">
+    <a href="album.html" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+      album
+    </a>
+    <a href="gallery.html" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+      🖼️gallery
+      </a>
+      <a href="screenshoot.html" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+        screenshot
+      </a>
+      <a href="video.html" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+        video
+      </a>
+      <a href="socialmedia.html" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition">
+        socialmedia
+      </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-20 mt-25">
+   <marquee><p class="text-sm">&copy; 2025 NovaNest. All rights reserved. #Hosted by Robert</p></marquee>
+  </footer>
+
+</body>
+</html>

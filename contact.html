@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us – NovaNest</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3366cc;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a,
+.nav-links button {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  text-decoration: underline;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #254a99;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+}
+
+.contact-info h2 {
+  color: #3366cc;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #444;
+}
+.back-button {
+  display: inline-block;
+  margin: 20px 0 10px 20px;
+  padding: 10px 18px;
+  background-color: #7aec1c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #15e49f;
+}
+  </style>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+    <a href="index.html" class="back-button">⬅ Back</a>
+  <header class="navbar">
+    <div class="logo">NovaNest</div>
+  </header>
+
+  <main class="contact-container">
+    <h1>Contact Us</h1>
+    <a href="Document1.pdf" class="back-button">about information</a>
+    <p class="subtext">Got questions, feedback, or just want to say hi? Fill out the form below.</p>
+
+    <div class="contact-grid">
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+
+    
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Name:</strong> NIYOYITA Robert</p>
+        <p><strong>school name:</strong>College of Science and Technology</p>
+        <p><strong>Program</strong> Information System</p>
+        <p><strong>Email:</strong> niyoyitarobert019@gmail.com</p>
+        <p><strong>Phone:</strong>+250780348882/0733325102</p>
+        <p><strong>Location:</strong> Kigali, Rwanda</p>
+        <p>Follow us on social media for updates and news.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "login.html";
+    }
+
+    document.querySelector(".contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Message sent successfully! We’ll get back to you soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

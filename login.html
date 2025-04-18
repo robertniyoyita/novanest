@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 50px;
+    }
+
+    .left {
+      max-width: 400px;
+    }
+
+    .left h1 {
+      color: #297ae4;
+      font-size: 56px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 24px;
+    }
+
+    .login-box {
+      background-color: rgb(236, 240, 243);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 14px;
+      margin: 8px 0;
+      border: 1px solid #38e628;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 14px;
+      background-color: #45889c;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-box button:hover {
+      background-color: #45889c;
+    }
+
+    .login-box a {
+      display: block;
+      text-align: center;
+      margin: 12px 0;
+      color: #45889c;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .divider {
+      border-bottom: 1px solid #4e88e0;
+      margin: 20px 0;
+    }
+
+    .create-btn {
+      background-color: #42b72a;
+      margin: 0 auto;
+      display: block;
+      width: fit-content;
+      padding: 12px 20px;
+      font-size: 17px;
+      border-radius: 6px;
+    }
+    .back-button {
+  display: inline-block;
+  margin: 20px 0 10px 20px;
+  padding: 10px 18px;
+  background-color: #7aec1c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #15e49f;
+}
+
+    .create-btn:hover {
+      background-color: #36a420;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+      .forgot-password {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .forgot-password a {
+      color: #626f7e;
+      text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+      .left h1 {
+        font-size: 40px;
+      }
+
+      .left p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="login-box ">⬅ Back</a>
+  <div class="container">
+    <div class="left">
+      <h1>navanest</h1>
+      <p>#Visit navanest.com</p>
+    </div>
+    <div class="login-box">
+      <input type="text" placeholder="Email or Phone Number">
+      <input type="password" placeholder="Password">
+      <a href="dashbord.html" class="back-button">Log in</a>
+      <a href="index.html">forgot password</a>
+      <div class="divider"></div>
+    </div>
+  </div>
+</body>
+</html>

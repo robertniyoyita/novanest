@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NovaNest Dashboard</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3366cc;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a,
+.nav-links button {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  text-decoration: underline;
+}
+
+.dashboard-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.back-button {
+  display: inline-block;
+  margin: 20px 0 10px 20px;
+  padding: 10px 18px;
+  background-color: #7aec1c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #15e49f;
+}
+  </style>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <a href="index.html" class="back-button">⬅ Back</a>
+  <header class="navbar">
+    <div class="logo">NovaNest</div>
+   
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="project.html">🎯Projects</a>
+      <a href="setting.html">⚙️Settings</a>
+      <button onclick="logout()">Logout</button>
+    </nav>
+  </header>
+
+  <main class="dashboard-content">
+    <h1>Welcome to your Dashboard, Robert!</h1>
+    <p>This is your central hub to manage everything on NovaNest.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3><a href="#My project">🎯My project</a></h3>
+        <p>Track and manage your current ideas.</p>
+      </div>
+      <div class="card">
+        <h3><a href="#community">comunity</a></h3>
+        <p>Connect with other creators and innovators.</p>
+      </div>
+      <div class="card">
+        <h3><a href="#Updates">Updates</a></h3>
+        <p>See the latest news and feature releases.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function logout() {
+      // Clear login status and redirect
+      localStorage.removeItem("loggedIn");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
